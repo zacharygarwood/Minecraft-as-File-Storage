@@ -30,4 +30,8 @@
         </dependency>
     </dependencies>
 
+    <build>
+        <directory>${dir}</directory>
+    </build>
+
 </project>

@@ -1,4 +1,4 @@
 name: 'MAFS'
 version: '1.0.0'
-main: com.mafs
-api-version: '1.17'
+main: com.mafs.Plugin
+api-version: '1.20'

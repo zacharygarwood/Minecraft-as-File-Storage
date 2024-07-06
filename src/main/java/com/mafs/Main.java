@@ -1,17 +1,31 @@
 package com.mafs;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import org.bukkit.Material;
+import org.bukkit.plugin.java.JavaPlugin;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+import java.io.File;
+import java.io.IOException;
+
+public class Main extends JavaPlugin {
+    @Override
+    public void onEnable() {
+        getLogger().info("onEnable is called!");
+        
+        String filepath = "C:\\Users\\garwo\\Documents\\Projects\\minecraft-as-file-storage\\src\\main\\java\\com\\mafs\\test.txt";
+        File file = new File(filepath);
+        Encoder encoder = new Encoder(file);
+
+        try {
+            Material[] materials = encoder.getBlocks();
+            for (Material material : materials) {
+                getLogger().info(material.toString());
+            }
+        } catch (IOException e) {
+            getLogger().throwing("Main", "onEnable", e);
         }
+    }
+    @Override
+    public void onDisable() {
+        getLogger().info("onDisable is called!");
     }
 }
