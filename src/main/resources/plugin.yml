@@ -1,4 +1,12 @@
 name: 'MAFS'
-version: '1.0.0'
-main: com.mafs.Plugin
+version: '1.0'
+author: 'Zach'
+main: com.mafs.Main
 api-version: '1.20'
+commands:
+  encode:
+    description: 'Encodes a given file in Minecraft blocks and a structure representing the file is generated in front of the player. NOTE: The file MUST be in the "files" directory where your server is running'
+    usage: /<command> <filename>
+  decode:
+    description: 'Decodes a previously encoded file. NOTE: The file MUST be in the "files" directory where your server is running'
+    usage: /<command> <filename>

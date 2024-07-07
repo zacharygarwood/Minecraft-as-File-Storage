@@ -3,7 +3,7 @@ package com.mafs.helper;
 import org.bukkit.Material;
 
 public class Mapping {
-    private static Material[] materials = {
+    public static Material[] materials = {
         Material.ACACIA_LOG,
         Material.ACACIA_PLANKS,
         Material.ACACIA_SLAB,
@@ -102,8 +102,6 @@ public class Mapping {
         Material.DEAD_BRAIN_CORAL_BLOCK,
         Material.DEAD_BUBBLE_CORAL_BLOCK,
         Material.DEAD_FIRE_CORAL_BLOCK,
-        Material.DEAD_HORN_CORAL_BLOCK,
-        Material.DEAD_TUBE_CORAL_BLOCK,
         Material.DIAMOND_BLOCK,
         Material.DIAMOND_ORE,
         Material.DIORITE,
