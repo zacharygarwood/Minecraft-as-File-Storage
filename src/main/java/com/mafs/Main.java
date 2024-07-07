@@ -1,13 +1,8 @@
 package com.mafs;
 
 import org.bukkit.ChatColor;
-import org.bukkit.Material;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-import java.io.IOException;
-
-import com.mafs.helper.Mapping;
 import static com.mafs.helper.Constants.ENCODE_COMMAND;
 import static com.mafs.helper.Constants.DECODE_COMMAND;
 
