@@ -1,4 +1,4 @@
-# mafs — Minecraft as file storage
+# mafs - Minecraft as file storage
 
 A Spigot plugin that stores files in a Minecraft world. Every byte of a file becomes a block, and the blocks can be read back into the original file.
 
