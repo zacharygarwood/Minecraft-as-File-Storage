@@ -8,5 +8,5 @@ commands:
     description: 'Encodes a given file in Minecraft blocks and a structure representing the file is generated in front of the player. NOTE: The file MUST be in the "files" directory where your server is running'
     usage: /<command> <filename>
   decode:
-    description: 'Decodes a previously encoded file. NOTE: The file MUST be in the "files" directory where your server is running'
+    description: 'Decodes a previously encoded file from the structure in front of the player. Stand where you ran /encode. The file is written to the "files" directory where your server is running and existing files are not overwritten'
     usage: /<command> <filename>

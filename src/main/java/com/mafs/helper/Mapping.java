@@ -20,6 +20,10 @@ public class Mapping {
         return MATERIALS[b & 0xff];
     }
 
+    public static boolean isMapped(Material material) {
+        return BYTES.containsKey(material);
+    }
+
     public static byte blockToByte(Material material) {
         Byte b = BYTES.get(material);
         if (b == null) {
