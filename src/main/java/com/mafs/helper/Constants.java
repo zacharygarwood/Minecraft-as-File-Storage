@@ -13,6 +13,12 @@ public final class Constants {
 
     public static final int CHUNK_LENGTH = 16;
     public static final int CHUNK_HEIGHT = 256;
+    public static final int START_OFFSET = 5;
+
+    public static final String FILES_DIRECTORY = "files";
+
+    // Placed after the last data block to mark the end of the file
+    public static final Material EOF_MARKER = Material.BEACON;
 
     public static final Material[] MATERIALS = {
             Material.ACACIA_LOG,
